@@ -8,5 +8,6 @@ async function setup() {
 		prefix: '/trpc',
 	});
 	await server.start();
+	// makeCheckServerStatusJob()
 }
 await setup()
