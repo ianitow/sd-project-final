@@ -1,0 +1,27 @@
+{
+  "name": "@sd-project/client",
+  "devDependencies": {
+    "@types/split-file": "^2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.1.6"
+  },
+  "exports": {
+    "types": "./src/index.ts",
+    "development": "./src/index.ts",
+    "default": "./dist/index.js"
+  },
+  "private": true,
+  "scripts": {
+    "build": "tsc --build",
+    "dev": "tsx --watch --conditions=development src/index.ts"
+  },
+  "type": "module",
+  "dependencies": {
+    "@sd-project/server": "workspace:^",
+    "@sd-project/server-management": "workspace:^",
+    "@trpc/client": "^10.45.2",
+    "@trpc/server": "^10.45.2",
+    "split-file": "^2.3.0",
+    "superjson": "^2.2.2"
+  }
+}

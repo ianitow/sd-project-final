@@ -1,0 +1,25 @@
+{
+  "name": "@sd-project/server-management",
+  "dependencies": {
+    "@trpc/client": "^10.45.2",
+    "@trpc/server": "^10.45.2",
+    "amqplib": "^0.10.5",
+    "fastify": "^5.2.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0",
+    "@types/express": "^4.17.17",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
+  },
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "nodemon -L --watch ./dist --inspect=0.0.0.0:9222 --nolazy ./dist/src/main/index.js",
+    "build": "tsc",
+    "dev": "tsx --watch --conditions=development src/main/index.ts",
+    "start": "node build/index.js"
+  },
+  "type": "module"
+}

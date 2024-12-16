@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+
+    "strict": true,
+    "target": "ESNext",
+
+    "outDir": "./dist/",
+    "baseUrl": "src",
+    "noEmit": true
+  }
+}
